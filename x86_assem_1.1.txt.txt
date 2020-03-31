@@ -1,0 +1,22 @@
+assembler  : 어셈블리 언어로 작성된 소스 코드 프로그램을 기계어로 변환하는 프로그램
+linker : assembler가 생성한 각 파일을 하나의 실행 프로그램으로 합치는 유틸리티 프로그램
+debugger : 프로그램을 단계적으로 실행하고 레지스터와 메모리를 살펴본다.
+
+16bit real- address mode : intel 8086, 8088 프로세서 용으로 작성된 프로그램에 필요한 세그먼트 메모리 모델을 사용 
+32bit protected mode :
+
+assembly languege & machine language 
+- machine language는 컴퓨터 프로세서(CPU)가 특별히 이해하는 숫자 언어
+- assembly는 ADD, MOV, SUB, CALL과 같은 짧은 니모닉으로 작성된 문장들로 구성
+- assembly, machine language 1:1(one to one)관계
+
+C++/JAVA & assembly
+- one to many 관계
+- 고급언어 > 저급언어(assembly) 번역 
+
+register : 레지스터는 연산의 중간 결과를 저장하는 CPU에 있는 이름이 부여된 저장 공간
+
+각 어셈블리 언어는 하나의 프로세서 계열에 기반을 두고 있다. 
+어셈블리 언어에서의 명령어는 컴퓨터의 구조와 직접 대응되거나
+microcode interpreter(마이크로코드 해독기)라고 하는 프로세서 내에 있는 프로그램에 의해서 실행되는 동안 번역될 수도 있다.
+
