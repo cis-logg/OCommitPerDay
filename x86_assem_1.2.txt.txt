@@ -1,0 +1,31 @@
+virtual machine concept
+- 가상기계개념 : 컴퓨터 하드웨어와 소프트웨어가 어떻게 관련되는지 설명
+
+L0 : 순수 숫자로 구성된 프로그램 언어
+L1 : L0보다 사용하기 쉬운 프로그램 언어
+interpretation : L1이 실행되면서 L0로 작성된 프로그램에 의해 decode되어 실행됨
+                    L1은 즉시 실행되지만 각 명령어는 해독되어야 실행될 수 있다.
+translation : L1프로그램 전체가 특별히 설계된 L0 프로그램에 의해 L0 프로그램으로 변환
+                변환된 L0 프로그램은 직접 실행될 수 있다.
+
+virtual machine
+- 가상기계
+
+JAVA 프로그래밍 언어는 가상 기계 개념에 기반을 둔다.
+JAVA는 자바 컴파일러에 의해 Java byte code로 변환된다. 
+Java byte code : 실행 시간에 Java virtual machine JVM 라고 하는 프로그램에 의해 빠르게 수행되는 저수준 언어
+
+Level 4 : High-Level Language
+	C, C++, JAVA
+	여러 개의 어셈블리 언어 명령어로 변환된다. 
+	변환된 어셈블리 언어 코드는 컴파일러에 의해 자동으로 기계어로 어셈블된다.
+Level 3 : Assembly Language
+	대규모 소프트웨어 개발을 가능하게 하는 변환계층 제공
+	ISA로 쉽게 변환되는 ADD, SUB, MOV 와 같은 짧은 니모닉을 사용
+	어셈블리 언어 프로그램은 수행 시작하기 전에 전부 기계어로 변환(assemble)
+Level 2 : Instruction Set Architecture (ISA) 명령어 집합구조 
+	machine language라고 부르는 이진수 값으로 구성
+	move, add, multiply와 같은 기본적인 연산을 수행하는 instruction set을 프로세서 안에 설계
+	이런 명령어는 microprogram이라 부르는 마이크로프로세서에 내장된 프로그램에 의해 수행된다.
+Level 1 : Digital Logic
+
