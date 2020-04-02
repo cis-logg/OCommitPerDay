@@ -1,12 +1,72 @@
-6a3d
+데이터표현
 
-0110 1010 0011 1101
+수의 형식 또는 체계는 한자리에 사용할 수 있는 기호의 최대 개수인 base를 가지고 있다.
 
-95c2 + 1
+컴퓨터는 명령어와 데이터를 전하 충전 상태의 집합 형태로 메모리에 저장한다.  (on / off , true / false)
 
-1001 0101 1100 0010
+binary number (2진수) = bit (비트)
+
+	1 0 1 1 0 0 1 0 1 0 0 1 1 1 0 0
+MAB					LSB
+most significant bit				least significant bit
+
+	signed integer : 양수 or 음수
+	unsigned integer : default 양수
+	## 0 : 양수로 간주한다. 
+
+x86컴퓨터에서 모든 데이터에 대한 기본 저장공간 단위는 8비트를 포함하는 byte이다.
+
+	byte : 1byte (8bit)
+	word : 2byte (16bit)
+	doubleword : 4byte (32bit)
+	quadword : 8byte (64bit)
+
+	1KB (kilobyte) = 2^10, 1024 byte
+	1MB (megabyte) = 2^20, 1048576 byte
+	1GB (gigabyte) = 2^30, 1074741824 byte
+
+x86 프로세서에서 MSB는 부호를 표시한다.
+0 : 양수  0110 (양수 6)
+1 : 음수  1010 (음수 6)
+
+
+2의 보수 표현법
+(어떤 숫자를 그 숫자의 덧셈에 대한 역원과 더하면 합이 0이다.)
+
+	0110 의 보수 : 1010
+	0110 비트를 반전시켜 1001 로 만들고 1을 더한다. 
+
+16진수 보수
+	6a3d
+	0110 1010 0011 1101
+
+	95c2 + 1
+	1001 0101 1100 0010
 
 15 - 6 = 9
 15 - a = 5
 15 - 3 = c
-15 - d = 2
+15 - d = 2  
+
+문자 저장공간
+character set(문자 집합) : 문자를 정수로 맵핑하여 사용한다.
+
+ASCII American Standard Code for Information Interchange
+바이트의 하위 7비트만 사용한다. 
+여분의 비트 : 나머지 128~255까지의 값은 여러 컴퓨터에서 개별적으로 사용하는 문자 집합을 만드는데 사용한다.
+IBM호환 마이크로컴퓨터 (MS-DOS)
+
+ANSI American National Standards Institute
+256문자까지 표현하는 8비트 문자 집합을 정의한다.
+첫번째 128개 문자는 표준 미국 키보드에 있는 문자와 기호에 대응된다.
+두번째 128개 문자는 국제 알파벳, 악센트, 통화 기호와 분수와 같은 특수 문자 표현
+사용할 수 있는 문자 수를 증가시키기 위해서 MS-Windows는 code page라고 하는 문자표들 사이를 스위칭한다.
+MS-Windows Me, 98, 95
+
+Unicode
+UTF-8 : HTML에서 사용, ASCII와 같은 바이트 값을 갖고 있다.
+UTF-16 : 각 문자는 16비트로 부호화한다.
+UTF-32 : 공간이 중요하지 않고 고정된 길이의 문자가 필요한 환경에서 사용된다.
+데이터의 손실 없이 더 작은 유니코드 값(byte)을 더 큰 유니코드 값(word/double word)으로 복사할 수 있다.
+
+
