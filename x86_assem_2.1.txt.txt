@@ -1,0 +1,10 @@
+CPU : central processor unit
+계산과 논리 연산이 이루어지는 중앙처리장치
+    구성 : register (레지스터) : 제한된 수의 기억 장소
+	고주파수 클럭 : 다른 시스템 구성요소를 CPU의 내부와 동기시킨다.
+	CU control unit (제어장치) : 기계 명령어를 실행하는 데 수반되는 단계들의 순서를 조정한다.
+	ALU arthmetic logic unit (산술논리연산장치) : 덧셈, 뺄심과 AND, OR, NOT 과 같은 논리 연산을 수행한다.
+
+
+
+
