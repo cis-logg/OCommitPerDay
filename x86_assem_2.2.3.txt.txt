@@ -1,0 +1,2 @@
+부동 소수점 장치
+FPU, floating pint unit : 부동 소수점 장치
