@@ -35,6 +35,21 @@ Inter 64
 원래 AMD가 개발한 x86-64 사양을 인텔이 구현
 개별 프로세서들이 64bit보다 작은 주소를 구현할지라도 64bit 선형 주소 공간을 제공
 물리적 주소 공간은 64GB 보다 더 클 수 있다.
+	IA-32e모드
+	호환 모드 : 예전의 16bit와 32bit 응용 프로그램을 실행할 수 있다.
+	64bit 모드 : 메모리 세그먼테이션이 비활성화 되어 균일 선형주소 공간을 만든다.
 
+하이퍼 쓰래딩과 멀티 코어 처리
+dual processor system : 두 개의 독립된 물리적 컴퓨터 프로세서를 포함
+	두 개의 독립된 작업(process or thread)이 병렬로 동시에 수행하도록 스케쥴링
+intel hyperthreading(HT) : 두 작업을 단일 프로세서에서 동시에 수행
+dual core : 같은 직접회로(IC) 패키지에 두 개의 완전한 물리적 컴ㅍ터 프로세서 칩을 포함한 직접회로
+	각 프로세서는 자원/프론트 사이드 버스에 대한 독립적인 통신 경로를 갖는다.
+
+CISC Complex Instruction Set Computer, 복잡한 명령어 집합 컴퓨터
+microcode라는 언어로 작성된 CPU 내부에 있는 해독기가 기계어 명령어를 해독하고 실행시킨다.
+
+RISC Reduced Instruction Set Computer, 축소 명령어 집합
+하드웨어를 사용하여 명령어를 해독하고 실행한다.
 
 
