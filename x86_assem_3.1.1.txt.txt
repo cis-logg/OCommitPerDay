@@ -1,0 +1,30 @@
+integer constant, 정수 상수
+	[(+|-}] digits [radix]
+	
+	h : 16진수 Hexadecimal
+	q/o : 8진수 Octal
+	d : 10진수 Decimal
+	b : 2진수 Binary
+	r : 부호화 실수 Encoded real
+	t : 10진수
+	y : 2진수
+radix 진수가 없으면 정수 상수는 10진수로 간주한다.
+문자로 시작되는 16진수 상수는 어셈블러가 식별자로 해석하지 않도록 맨 앞에 0을 넣는다.
+
+integer expression, 정수 수식
+	정수 값과 산술 연산자를 포함하는 수학식
+	수식은 32bit에서 저장할 수 있는 정수(0~FFFFFFFFh)로 계산되어야 한다.
+	이 수식은 어셈블 할 때 계산될 수 있다. 실행시간에 수행되는 수식이 아니다.
+
+precedence, 우선순위 
+	( ) : 괄호 
+	+, - : 단항 +, 단항 -
+	*, / : 곱셈, 나눗셈
+	MOD : 나머지
+	+, - : 덧셈, 뺄셈
+
+
+
+
+
+
