@@ -23,6 +23,18 @@ precedence, 우선순위
 	MOD : 나머지
 	+, - : 덧셈, 뺄셈
 
+실수 상수
+	[sign] integer.[integer][exponent]
+
+	10진 실수(decimal real) 또는 부호화된 (16진수)실수로 나타낸다.
+	10진 실수 : 부호, 정수, 소수점, 소수부분을 나타내는 정수, 지수로 구성
+	적어도 한 자리와 소수점이 필요하다.
+
+character constant, 문자 상수
+	"" 또는 '' 에 둘러싸인 한 문자이다.
+
+string constant, 문자열 상수
+	"" 또는 ''에 둘러싸인 문자들의 열이다.
 
 
 
